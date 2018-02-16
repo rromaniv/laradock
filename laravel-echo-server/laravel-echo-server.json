@@ -1,5 +1,5 @@
 {
-	"authHost": "localhost",
+	"authHost": "http://api.loc",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [],
 	"database": "redis",
@@ -15,5 +15,13 @@
 	"protocol": "http",
 	"socketio": {},
 	"sslCertPath": "",
-	"sslKeyPath": ""
+	"sslKeyPath": "",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "*",
+		"allowMethods": "GET, POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+	}
 }
