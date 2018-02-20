@@ -22,7 +22,8 @@
 #CREATE DATABASE IF NOT EXISTS `dev_db_2` COLLATE 'utf8_general_ci' ;
 #GRANT ALL ON `dev_db_2`.* TO 'default'@'%' ;
 
-#CREATE DATABASE IF NOT EXISTS `dev_db_3` COLLATE 'utf8_general_ci' ;
-#GRANT ALL ON `dev_db_3`.* TO 'default'@'%' ;
+CREATE USER 'vmt_user'@'%' IDENTIFIED BY 'vmt_db_password';
+CREATE DATABASE IF NOT EXISTS `vmt_db` COLLATE 'utf8_general_ci' ;
+GRANT ALL ON `vmt_db`.* TO 'vmt_user'@'%' ;
 
 FLUSH PRIVILEGES ;
